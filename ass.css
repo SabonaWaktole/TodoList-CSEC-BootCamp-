@@ -1,0 +1,86 @@
+*{
+    background-color: white;
+}
+.name{
+    text-align: center;
+}
+.head{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #f4f4f4;
+}
+.search{
+    max-width: 495px;
+}
+.searchbar{
+    max-width: 488px;
+    
+}
+
+.selectbutton{
+    background-color: blueviolet;
+}
+
+.icon{
+    background-color: rgb(129, 69, 185);
+    border-radius: 50%;
+}
+.notes{
+    margin-left: 60px;
+    margin-right: 80px;
+    font-size: larger;
+    font-weight: bold;
+    padding: 10px;
+    background-color: white(199, 195, 202, 0.649);
+    position: relative;
+    border-radius: 20px;
+}
+
+.boxes{
+    display: flex;
+    align-items: center;
+}
+
+.box{
+    transform: scale(2); /* Increase the size */
+    margin: 10px;
+    background-color: blueviolet;
+}
+
+
+.box:checked+p{
+    text-decoration: line-through;
+    color: gray;
+}
+
+.hiddenform{
+    display: none;
+    position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 80%;
+            padding: 20px;
+            background-color: white(255, 255, 255, 0.43);
+            color: black(215, 175, 175);
+            text-align: center;
+            display: none;  /* Initially hidden */
+            z-index: 10;
+            border-radius: 30px;
+}
+.bottomright{
+    position: absolute;
+    right: 30px;
+    bottom: -30px;
+    background-color: blueviolet;
+    border-radius: 50%;
+    font-size: larger;
+    
+}
+
+.bottomright:hover{
+    background-color: blue;
+    cursor: pointer;
+}

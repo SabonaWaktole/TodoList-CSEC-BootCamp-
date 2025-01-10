@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment</title>
+    <link rel="stylesheet" href="ass.css">
+    <script src="ass.js" defer></script>
+</head>
+<body>
+    <h2 class="name">TODO LIST</h2>
+    <div class="head">
+        <div class="search">
+            <input class="searchbar" type="text" placeholder="Search...">
+        </div>
+        <div class="dropselect">
+            <select name="selection" id="toselect" class="selectbutton">
+                <option value="#" id="All">All</option>
+                <option value="#" id="Inprogress">In progress</option>
+                <option value="#" id="Finished">Finished</option>
+            </select>
+        </div>
+        <button class="icon" type="button" id="nightmode">*</button>
+    </div>
+    <div class="notes">
+        <div class="boxes">
+            <input class="box" type="checkbox"><p>Note1</p>
+        </div>
+        <hr>
+        <div class="boxes">
+            <input  class="box" type="checkbox"><p>Note2</p>
+        </div>
+
+        <div class="hiddenform">
+            <h3>Add new task</h3>
+            <div>
+                <label for="description">Description</label>
+                <textarea name="description" id="description" ></textarea>
+            </div>
+            <div display: flex>
+                <button type="button" id="submit">Apply</button>
+                <button type="button" id="cancel">Cancel</button>
+            </div>
+        </div>
+
+        <button class="bottomright" type="button" id="btn">+</button>
+    </div>
+    
+</body>
+</html>
