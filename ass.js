@@ -51,8 +51,13 @@ let add = document.getElementById('btn');
 add.addEventListener('click', () => {
     let form = document.querySelector('.hiddenform');
     form.style.display = 'block';
-    document.body.style.backgroundColor = '#e8e6e6ac';
+    if (isWhite){
+        document.body.style.backgroundColor = '#e8e6e6ac';
+        form.style.color='black';
+    }
     form.style.backgroundColor = 'white';
+    
+
 });
 
 // Apply button functionality
@@ -95,9 +100,10 @@ apply.addEventListener('click', () => {
     del.appendChild(delimg);
 
     div.appendChild(checkbox);
+    div.appendChild(p);
     div.appendChild(edit);
     div.appendChild(del);
-    div.appendChild(p);
+    
 
     let line = document.createElement('hr');
     line.classList.add('line');
