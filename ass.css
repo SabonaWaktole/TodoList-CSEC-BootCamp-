@@ -1,6 +1,4 @@
-*{
-    background-color: white;
-}
+
 .name{
     text-align: center;
 }
@@ -41,6 +39,7 @@
 .boxes{
     display: flex;
     align-items: center;
+    position: relative;
 }
 
 .box{
@@ -53,6 +52,28 @@
 .box:checked+p{
     text-decoration: line-through;
     color: gray;
+}
+
+.edit{
+    color: green;
+    position: absolute;
+    right: 50px;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 30%;
+    font-size:medium;
+    cursor: pointer;
+}
+
+.delete{
+    color: red;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 30%;
+    font-size: medium;
+    cursor: pointer;
 }
 
 .hiddenform{

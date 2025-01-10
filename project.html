@@ -16,29 +16,33 @@
         <div class="dropselect">
             <select name="selection" id="toselect" class="selectbutton">
                 <option value="#" id="All">All</option>
-                <option value="#" id="Inprogress">In progress</option>
-                <option value="#" id="Finished">Finished</option>
+                <option value="#" id="Inprogress">InComplete</option>
+                <option value="#" id="Finished">Complete</option>
             </select>
         </div>
         <button class="icon" type="button" id="nightmode">*</button>
     </div>
     <div class="notes">
         <div class="boxes">
-            <input class="box" type="checkbox"><p>Note1</p>
+            <input class="box" type="checkbox">
+            <p>Note1</p>
+            <button class="edit">^</button>
+            <button class="delete">-</button>
         </div>
         <hr>
         <div class="boxes">
-            <input  class="box" type="checkbox"><p>Note2</p>
+            <input  class="box" type="checkbox">
+            <p>Note2</p>
+            <button class="edit">^</button>
+            <button class="delete">-</button>
         </div>
 
         <div class="hiddenform">
-            <h3>Add new task</h3>
-            <div>
                 <label for="description">Description</label>
-                <textarea name="description" id="description" ></textarea>
-            </div>
+                <input type="text" id="description" placeholder="Enter your task" required>
+            
             <div display: flex>
-                <button type="button" id="submit">Apply</button>
+                <button type="button" id="submit">Add task</button>
                 <button type="button" id="cancel">Cancel</button>
             </div>
         </div>
