@@ -114,6 +114,13 @@
 
 .line{
     
-    border: 2px solid rgb(118, 58, 153);
+    border: 1px solid rgb(118, 58, 153);
     border-radius: 10px;
+}
+
+.addtask{
+    background-color: blueviolet;
+    display: block;
+    height: 100%;
+    width: 100%;
 }

@@ -1,4 +1,15 @@
+const tasklist = [
+    {
+        "name":"Note1",
+        "status":"Inprogress"
+    }
+    ,
+    {
+        "name":"Note2",
+        "status":"Inprogress"
+    }
 
+]
 // drop down button functionality
 let dropdown = document.getElementById('toselect');
 dropdown.addEventListener('click', () => {
@@ -114,6 +125,8 @@ apply.addEventListener('click', () => {
     form.style.display = 'none';
     document.body.style.backgroundColor = 'white';
 
+    // append new task to tasklist
+    tasklist.push({"name":description,"status":"Inprogress"});
     // Clear the description input field
     document.getElementById('description').value = '';
 });
@@ -125,7 +138,4 @@ cancel.addEventListener('click', () => {
     form.style.display = 'none';
     document.body.style.backgroundColor = 'white';
 });
-
-
-
 
