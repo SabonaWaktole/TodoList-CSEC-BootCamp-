@@ -5,6 +5,7 @@
 .head{
     display: flex;
     justify-content: center;
+    gap: 10px;
     align-items: center;
     padding: 10px 20px;
     background-color: #f4f4f4;
@@ -104,4 +105,15 @@
 .bottomright:hover{
     background-color: blue;
     cursor: pointer;
+}
+
+.images{
+    height: 15px;
+    width: 15px;
+    }
+
+.line{
+    
+    border: 2px solid rgb(118, 58, 153);
+    border-radius: 10px;
 }

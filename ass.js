@@ -82,11 +82,17 @@ apply.addEventListener('click', () => {
 
     let edit = document.createElement('button');
     edit.classList.add('edit');
-    edit.textContent = '^';
+    editimg = document.createElement('img');
+    editimg.src = 'images/editbutton.png';
+    editimg.classList.add('images');
+    edit.appendChild(editimg);
 
     let del = document.createElement('button');
     del.classList.add('delete');
-    del.textContent = '-';
+    delimg = document.createElement('img');
+    delimg.src = 'images/deletebutton.png';
+    delimg.classList.add('images');
+    del.appendChild(delimg);
 
     div.appendChild(checkbox);
     div.appendChild(edit);
@@ -94,6 +100,7 @@ apply.addEventListener('click', () => {
     div.appendChild(p);
 
     let line = document.createElement('hr');
+    line.classList.add('line');
     notes[0].appendChild(line);
 
     notes[0].appendChild(div);
